@@ -46,9 +46,5 @@ sub print_address{
   my ($message) = @_;
   print "zipcode " . $message->[0]->{'zipcode'} . "\n";
   print encode("utf-8","address " . $message->[0]->{'address1'} . $message->[0]->{'address2'} . $message->[0]->{'address3'} . "\n");
-  print encode("utf-8", "kana    " . $message->[0]->{'kana1'} . $message->[0]->{'kana2'} . $message->[0]->{'kana3'} . "\n");
-}
-
-sub help{
-  print "help";
+  print encode("utf-8", "kana    " . $message->[0]->{'kana1'} . $message->[0]->{'kana2'} . $message->[0]->{'kana3'} . "\n\n");
 }
